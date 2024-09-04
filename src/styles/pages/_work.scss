@@ -1,0 +1,87 @@
+.scroll-container {
+    height: min(100dvh - 6rem);
+    width: 100dvw;
+    overflow-y: hidden;
+    display: grid;
+    grid-template-columns: 16em 1fr;
+    padding-left: 3rem;
+}
+
+.section-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 0;
+    padding-right: 2rem;
+    border-right: 1px solid black;
+    height: min(100dvh - 6rem);
+
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+    }
+}
+
+.section-images {
+    position: relative;
+    width: 100%;
+    // overflow: hidden;
+}
+
+.arrow-container {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+
+    .arrow {
+        color: beige;
+        height: 3rem;
+        width: 3rem;
+        position: absolute;
+        top: 50%;
+        border: 2px solid beige;
+        border-radius: 50rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &-left {
+            left: 2%;
+        }
+
+        &-right {
+            right: 2%;
+        }
+    }
+}
+
+.carousel-container {
+    position: absolute;
+    overflow: hidden;
+    z-index: inherit;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    .inner-carousel {
+        display: flex;
+        height: 100%;
+        width: 235%;
+        gap: 2rem;
+        cursor: grab;
+
+        img {
+            position: absolute;
+            pointer-events: none;
+            object-fit: cover;
+            object-position: 0 0;
+            width: 100%;
+            height: min(100dvh - 4rem);
+        }
+    }
+
+}

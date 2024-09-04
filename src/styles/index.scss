@@ -1,0 +1,20 @@
+/* locomotive-scroll */
+@import './locomotive/locomotive';
+
+/* base */
+@import './base/base';
+@import './base/reset';
+
+/* components */
+@import './components/menu';
+@import './components/footer';
+
+/* fonts */
+@import './fonts/fonts';
+
+/* layouts */
+@import './layouts/layout';
+
+/* pages */
+@import './pages/home';
+@import './pages/work';
